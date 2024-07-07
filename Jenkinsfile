@@ -7,7 +7,7 @@ pipeline {
                 sh '''
                     echo "Multiline shell steps works too"
                     ls -lah
-                    sleep 5
+                    sleep 10
                     echo "Building finished"
                 '''
             }
@@ -16,7 +16,7 @@ pipeline {
             steps {
                 sh '''
                     echo "Unit Testing.."
-                    sleep 5
+                    sleep 10
                     echo "Unit Testing finished.."
                 '''
 
@@ -26,7 +26,7 @@ pipeline {
             steps {
                 sh '''
                     echo "E2E Testing.."
-                    sleep 5
+                    sleep 10
                     echo "E2E Testing finished.."
                 '''
             }
@@ -35,7 +35,7 @@ pipeline {
             steps {
                 sh '''
                     echo "Deploying...."
-                    sleep 5
+                    sleep 10
                     echo "Deploying finished.."
                 '''
             }
