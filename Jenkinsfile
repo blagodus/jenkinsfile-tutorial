@@ -10,9 +10,14 @@ pipeline {
                 '''
             }
         }
-        stage('Test') {
+        stage('Unit Tests') {
             steps {
-                sh 'echo "Testing.."'
+                sh 'echo "Unit Testing.."'
+            }
+        }
+        stage('E2E Tests') {
+            steps {
+                sh 'echo "E2E Testing.."'
             }
         }
         stage('Deploy') {
